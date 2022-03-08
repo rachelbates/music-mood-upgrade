@@ -1,0 +1,40 @@
+{% if current_user.is_authenticated %}
+{% extends 'base.html' %}
+{% block body %}
+<div class="grid">
+    <div id="latest-post" class="text-center"></div>
+    <div class="entry-module shadow container-sm py-4">
+        <h2 class="text-center py-3">Your Mood + Energy</h1>
+        <div class="center-block d-flex justify-content-center ">
+            <div class="col-1 d-flex align-items-center justify-content-end">
+                <!-- <button id="">Previous</button> -->
+                <i id="previous-view" class="bi bi-chevron-compact-left"></i>
+            </div>
+            <div class="col-10 text-align-center">
+                <canvas class="my-5" id="myChart"></canvas>
+                <div class="d-flex justify-content-center my-4">
+                    <button class="btn btn-secondary mx-3 px-4" id="month-view">Month</button>
+                    <button class="btn btn-secondary mx-3 px-4" id="week-view">Week</button>
+                </div>
+            </div>
+            <div class="col-1 d-flex align-items-center justify-content-start">
+                <!-- <button id="next-view">Next</button> -->
+                <i id="next-view" class="bi bi-chevron-compact-right"></i>
+            </div>
+            </div>
+        </div>
+    <div id="test-journal-entries" class="container-sm d-flex flex-column">
+    </div>
+</div>    
+
+{% endblock %}
+
+{% block js %}
+<script src="../static/js/entry.js" type="text/babel"></script>
+<script src="../static/js/dashboard.js" type="text/babel"></script>
+<script src="../static/js/latest-post.jsx" type="text/babel"></script>
+<script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+
+
+{% endblock %} 
+{% endif %}

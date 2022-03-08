@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+
+/* TYPOGRPAPHY */
+
+p, body {
+    font-family: 'Ubuntu', sans-serif;
+}
+H1, H2, H3, H4, H5, H6 {
+    font-family: 'Poppins', sans-serif;
+}
+p.small {
+    font-size: 1rem;
+}
+.vertical {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+.background-gradient {
+    background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(21,27,97,1) 53%, rgba(27,23,107,1) 100%);
+}
+.background-main {
+    background: #D2E4F0;
+}
+.background-element {
+    background: #e3f1fa;
+    border-radius: 50px;
+}
+.neu-shadow-1 {
+    box-shadow:  20px 20px 60px #b3c2cc,
+             -20px -20px 60px #f2ffff;
+}
+.neu-button-1 {
+    box-shadow: 27px 27px 55px #b3c2cc,
+                -27px -27px 55px #f2ffff;
+}
+.neu-button-1:hover {
+    box-shadow: -3px 4px 19px #b3c2cc, -20px -20px 60px #f2ffff;
+}
+.neu-button-2 {
+    box-shadow: -3px 4px 19px #d6d6d6, -20px -20px 60px #ffffff;
+}
+.neu-button-2:hover {
+    box-shadow: -3px 4px 19px #d6d6d6, -7px -7px 14px #ffffff;
+}
+.card-module {
+    border-radius: 56px;
+    background: #ECF0F3;
+    box-shadow:  5px 5px 6px #e0e0e0,
+                 -5px -5px 6px #ffffff;
+}
+audio {
+    box-shadow: -1px 1px 3px #8e8e8e, 2px 5px 6px #d4d4d4;
+    border-radius: 32px;
+}
+.n-shadow {
+    box-shadow: 5px 5px 6px #c2c5c7, 7px 5px 30px #dcdcdc;
+}
+
+.edit-button {
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    background: #d2e4f0;
+    border-radius: 47px;
+    text-transform: uppercase;
+    top: 10px;
+    right: 10px;
+}
+.edit-button img {
+    width: 20px;
+    margin-left: 10px;
+}
+.grid {
+    /* border-radius: 56px; */
+    background: #ffffff1c;
+    /* box-shadow:  5px 5px 6px #e0e0e0,
+                 -5px -5px 6px #ffffff; */
+}
+.btn-green {
+    background: #a4dea4;
+}
+.btn-blue {
+    background: #beddef;
+}
+#editor-container.ql-container {
+    height: 14rem;
+    margin-bottom: 2rem;
+}
+.margin-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.padding-left {
+    padding-left: 1rem;
+}
+.padding-right{
+    padding-right: 1rem;
+}
+.spotify-custom-setup img {
+    border-radius: 18%;
+}
+img {
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.song-title {   
+    text-transform: uppercase;
+}
+.weather-section { 
+    border: 6px solid #7db5d6;
+    border-radius: 85px;
+    max-width: 170px;
+}
+.weather-section img {
+    max-width: 85px;
+}
+.weather-text {
+    text-transform: uppercase; 
+    font-size: 17px;
+}
+.journal-entry-module {
+    background: #ecf0f314;
+    box-shadow:  5px 5px 6px #c2c5c7,
+             -5px -5px 6px #ffffff;
+}
+.twitter-share-button {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+/* THEME COLORS */
+
+.background-dark-1 {
+    background-color: #000000;
+}
+.background-dark-2 {
+    background-color: #0000b9;
+}
+.background-light-1 {
+    background-color:#BBE1FA;
+}
+.background-accent-1 {
+    background-color: #E17D66
+}
+.color-light {
+    color: #ffffff;
+}
+
+/*SPECIFIC COMPONENTS */ 
+.blue-module {
+    border-top: 9px solid #beddef;
+}
+.register-module {
+    border-top: 9px solid #a4dea4;
+}
+.entry-module {
+    border-top: 9px solid #ECF0F3;
+}
+/* QUILL EDITOR */
+.ql-editor.ql-blank {
+    background: #ffffff;
+}
+.ql-toolbar.ql-snow {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: inset -5px -5px 17px #cedae2, inset 5px 5px 17px #f6ffff;
+}
+
+.genre-picker {
+    padding: 15px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+    -webkit-column-rule: 1px solid lightgrey;
+    -moz-column-rule: 1px solid lightgrey;
+    column-rule: 1px solid lightgrey;
+}
+.sideways {
+    transform: rotate(313deg);
+}
+.sliders {
+    transform: rotate(270deg);
+}
+.range_sliders input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+@media only screen and (min-width: 576px) {
+    /* * {
+        transition: all .25s ease-out;
+    } */
+    .top-grid {
+        display: flex;
+        justify-content: center;
+        /* background-color: #2b7a78; */
+    }
+    i.bi {
+        font-size: 5rem;
+        color: #969696;
+        cursor: pointer;
+    }
+    .close-button {
+        position: absolute;
+        top:0;
+        right: 0;
+    }
+    .genre-picker {
+        padding: 15px;
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        -webkit-column-gap: 40px;
+        -moz-column-gap: 40px;
+        column-gap: 40px;
+        -webkit-column-rule: 1px solid lightgrey;
+        -moz-column-rule: 1px solid lightgrey;
+        column-rule: 1px solid lightgrey;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .genre-picker {
+        padding: 15px;
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+        -webkit-column-gap: 40px;
+        -moz-column-gap: 40px;
+        column-gap: 40px;
+        -webkit-column-rule: 1px solid lightgrey;
+        -moz-column-rule: 1px solid lightgrey;
+        column-rule: 1px solid lightgrey;
+    }
+    .border-bottom-module {
+        border-bottom: 3px solid #d8d8d8;
+    }
+    .border-top-module {
+        border-top: 3px solid #d8d8d8;
+    }
+    .border-left-module {
+        border-left: 3px solid #d8d8d8;
+    }
+    .spotify-custom-setup img {
+        max-width:250px;
+    }
+    .spotify-custom-setup audio {
+        max-width: 250px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    .genre-picker {
+        padding: 15px;
+        -webkit-column-count: 5;
+        -moz-column-count: 5;
+        column-count: 5;
+        -webkit-column-gap: 40px;
+        -moz-column-gap: 40px;
+        column-gap: 40px;
+        -webkit-column-rule: 1px solid lightgrey;
+        -moz-column-rule: 1px solid lightgrey;
+        column-rule: 1px solid lightgrey;
+    }
+}
